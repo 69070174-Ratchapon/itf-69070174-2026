@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f5ed"><meta name="description" content="วันนี้กินไรดี? กดสุ่มอาหารได้เลย มีเมนูอร่อยพร้อมให้ ไม่ต้องคิด ไม่ต้องตั้งค่า">
+<title>กินไรดี — ให้มื้อนี้เป็นเรื่องง่าย</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand"><span>ก.</span>กินไรดี</div><div class="header-note"><i class="dot"></i>เรื่องกิน ให้เราคิดให้</div></header>
+<main>
+<section class="intro"><div class="eyebrow">A LITTLE HELP FOR YOUR NEXT MEAL</div><h1>คิดไม่ออก <em>บอกเรา</em></h1><p>มื้อนี้ไม่ต้องคิดเยอะ กดสุ่มแล้วไปอร่อยกันเลย</p></section>
+<section class="stage" id="stage" aria-label="สุ่มอาหาร">
+<div class="card-top"><span>YOUR NEXT MEAL</span><span class="ready">✦ เมนูพร้อมเสิร์ฟ</span></div>
+<div class="plate-wrap"><span class="spark" aria-hidden="true">✦</span><div class="plate"><span class="food-emoji" id="emoji" aria-hidden="true">🍽️</span></div><span class="leaf" aria-hidden="true">🌿</span></div>
+<div id="result" aria-live="polite" aria-atomic="true"><p class="result-label" id="label">มื้ออร่อยของคุณ อาจเป็น…</p><h2 id="food">วันนี้กินอะไรดี?</h2><p class="description" id="description">มีเมนูให้แล้ว แค่กดปุ่มข้างล่าง</p></div>
+<button class="shuffle" id="shuffle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h3c5 0 7 12 12 12h3m-4-4 4 4-4 4M3 18h3c2 0 3-2 4-4m4-4c1-2 2-4 4-4h3m-4-4 4 4-4 4"/></svg><span id="buttonText">สุ่มเลย หิวแล้ว!</span></button>
+<p class="hint">ไม่ถูกใจ? กดสุ่มใหม่ได้เรื่อย ๆ</p>
+<div class="bottom-note"><span>✧</span> <span id="menuCount"></span> <span>· ไม่ต้องตั้งค่า · พร้อมสุ่มทุกมื้อ</span></div>
+</section>
+<section class="recent" id="recent" aria-label="เมนูที่เพิ่งสุ่ม"><div class="recent-head"><span>เมื่อกี้สุ่มได้อะไรนะ</span><span>5 เมนูล่าสุด</span></div><div class="history-list" id="history"></div></section>
+<p class="footer">ลดเวลาคิด เพิ่มเวลาอร่อย <span>♡</span></p>
+</main><script src="app.js"></script>
+</body></html>
